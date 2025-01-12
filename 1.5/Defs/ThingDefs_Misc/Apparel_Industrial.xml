@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="ApparelMakeableBase" Name="OCARINA_PrisonerJumpsuitBase" Abstract="True">
+        <techLevel>Industrial</techLevel>
+        <tradeability>Sellable</tradeability>
+        <generateCommonality>0</generateCommonality>
+        <costStuffCount>85</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+            <WorkToMake>2400</WorkToMake>
+            <Mass>0.50</Mass>
+            <Flammability>0.2</Flammability>
+            <StuffEffectMultiplierArmor>0.10</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+            <SocialImpact>0.05</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.20</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <thingCategories Inherit='False'>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>IndustrialAdvanced</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Slave</li>
+            </defaultOutfitTags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <recipeUsers Inherit="False">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="OCARINA_PrisonerJumpsuitBase">
+        <defName>OCARINA_PrisonerJumpsuit_Blue</defName>
+        <label>prisoner jumpsuit</label>
+        <description>A full body jumpsuit made out of thick fabric or leather, adorned with buttons for ease of use and a nametag for immediate identification. These jumpsuits are often worn by low-risk prisoners.</description>
+        <graphicData>
+            <texPath>Things/Apparel/PrisonJumpsuit_Blue/PrisonJumpsuit_Blue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/PrisonJumpsuit_Blue/PrisonJumpsuit_Blue</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="OCARINA_PrisonerJumpsuitBase">
+        <defName>OCARINA_PrisonerJumpsuit_Orange</defName>
+        <label>prisoner jumpsuit</label>
+        <description>A full body jumpsuit made out of thick fabric or leather, adorned with buttons for ease of use and a nametag for immediate identification. These jumpsuits are often worn by medium-risk prisoners, more commonly known as "general population".</description>
+        <graphicData>
+            <texPath>Things/Apparel/PrisonJumpsuit_Orange/PrisonJumpsuit_Orange</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>240</MaxHitPoints>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/PrisonJumpsuit_Orange/PrisonJumpsuit_Orange</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="OCARINA_PrisonerJumpsuitBase">
+        <defName>OCARINA_PrisonerJumpsuit_Red</defName>
+        <label>prisoner jumpsuit</label>
+        <description>A full body jumpsuit made out of thick fabric or leather, adorned with buttons for ease of use and a nametag for immediate identification. These jumpsuits are often worn by high-risk prisoners.</description>
+        <graphicData>
+            <texPath>Things/Apparel/PrisonJumpsuit_Red/PrisonJumpsuit_Red</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>320</MaxHitPoints>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/PrisonJumpsuit_Red/PrisonJumpsuit_Red</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+</Defs>
