@@ -10,6 +10,7 @@
         <li>1.2</li>
         <li>1.1</li>
         <li>1.0</li>
+        <li>1.6</li>
     </supportedVersions>
     <description>Adds three prisoner jumpsuit clothing items. Red jumpsuits for high risk prisoners, orange jumpsuits for medium risk prisoners / general population, and blue jumpsuits for low risk prisoners. The jumpsuits do not provide any meaningful stat differences, except generally having a higher HP pool with higher risk outfits. The best way to apply these in a meaningful way to your prisoners / slaves is create 3 clothing restrictions for low risk, medium risk, and high risk, and then dynamically assign them as you see fit. The jumpsuit design is heavily inspired by the Vanilla Apparel Expanded jumpsuit, mixed with how Back to the Dawn's prisoner outfits look, with the colors being picked directly from how they look in the game. The jumpsuit code is also almost one to one copy-pasted from Vanilla Apparel Expanded's jumpsuit, with mild modifications.</description>
     <loadAfter>
